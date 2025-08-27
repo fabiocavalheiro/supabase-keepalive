@@ -1,8 +1,9 @@
 name: keepalive
 on:
   schedule:
-    - cron: "0 */6 * * *"    # roda a cada 6 horas
-  workflow_dispatch:          # permite rodar manualmente
+    - cron: "0 * * * *"   # executa no minuto 0 de TODA hora (de hora em hora)
+  workflow_dispatch:
+
 
 jobs:
   ping:
